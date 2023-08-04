@@ -977,11 +977,11 @@ body {
 .modal-checkbox {
     border-radius: 1px;
     fill: transparent;
-    stroke: var(--lightslate, rgba(46, 47, 66, 0.60));
+   
 
 }
 
-.modal-check:checked {
+.modal-check:checked + modal-check-wrap{
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
