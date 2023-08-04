@@ -566,7 +566,7 @@ input {
 
 .footer-container-third {
     margin-left: 80px;
-    
+
 }
 
 
@@ -586,21 +586,19 @@ input {
     background-color: transparent;
     color: var(--white);
     outline: transparent;
-   
+
 }
 
 .footer-input::placeholder {
     color: var(--white);
 }
 
-.footer-form{
+.footer-form {
     display: flex;
     gap: 24px;
 }
 
-.footer-label{
-    
-}
+.footer-label {}
 
 
 .footer-btn {
@@ -624,13 +622,13 @@ input {
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
-.footer-inpute-icon{
+.footer-inpute-icon {
     fill: var(--white);
     margin-left: 16px;
-    
+
 }
 
 .footer-btn:hover,
@@ -869,7 +867,7 @@ body {
     border-color: var(--iris);
 }
 
-.modal-form-wrap:focus-within{
+.modal-form-wrap:focus-within {
     fill: var(--iris);
 }
 
@@ -909,11 +907,11 @@ body {
     margin-bottom: 4px;
 }
 
-.modal-form-wrap{
+.modal-form-wrap {
     position: relative;
 }
 
-.input-field-comment{
+.input-field-comment {
     margin-bottom: 16px;
 }
 
@@ -931,7 +929,7 @@ body {
     width: 100%;
     min-height: 120px;
     font-size: 12px;
-    line-height: 1.17; 
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -943,11 +941,11 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-placeholder:focus-within{
-    border-color: #4D5AE5; 
+.modal-placeholder:focus-within {
+    border-color: #4D5AE5;
 }
 
-.check-field{
+.check-field {
     margin-bottom: 24px;
 }
 
@@ -958,31 +956,32 @@ body {
     color: var(--lightslate);
 }
 
-.modal-check-wrap{
+.modal-check-wrap {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;justify-content: center;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     fill: transparent;
     margin-right: 8px;
 }
 
-.modal-check-link{
+.modal-check-link {
     color: var(--iris, #4D5AE5);
     text-decoration-line: underline;
 }
 
-.modal-checkbox{
+.modal-checkbox {
     border-radius: 1px;
     fill: transparent;
-stroke: var(--lightslate, rgba(46, 47, 66, 0.60));
-margin-right: 8px;
+    stroke: var(--lightslate, rgba(46, 47, 66, 0.60));
+
 }
 
-.modal-check:checked modal-check-wrap{
+.modal-check:checked {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
