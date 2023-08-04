@@ -981,7 +981,7 @@ body {
 
 }
 
-.modal-check:checked + modal-check-wrap{
+.modal-check:checked + .modal-check-text span{
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
