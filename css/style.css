@@ -557,7 +557,6 @@ input {
 
 .footer-form-text {
     color: var(--white, #FFF);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -577,14 +576,14 @@ input {
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
-    line-height: 2;
-    letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding-left: 16px;
-    background-color: var(--navyblue, #2E2F42);
+    background-color: transparent;
     color: var(--white);
     outline: transparent;
    
@@ -598,7 +597,9 @@ input {
     display: flex;
 }
 
-
+.footer-label{
+    gap: 24px;
+}
 
 
 .footer-btn {
@@ -616,8 +617,9 @@ input {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    display: inline-flex;
-    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 24px;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -627,6 +629,7 @@ input {
 
 .footer-inpute-icon{
     fill: var(--white);
+    margin-left: 16px;
     
 }
 
@@ -800,9 +803,7 @@ body {
     fill: var(--white)
 }
 
-/* .btn-wrap {
-    background-color: var(--cornflower);
-} */
+
 
 .modal-btn-close {
     position: absolute;
@@ -839,14 +840,13 @@ body {
 
 }
 
-.input-item:not(:last-child) {
+.input-field {
     margin-bottom: 8px;
 }
 
 .modal-title {
     color: var(--navyblue, #2E2F42);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -856,13 +856,15 @@ body {
 
 
 .modal-input {
-    width: 360px;
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     outline: transparent;
     padding-left: 38px;
     background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -902,20 +904,23 @@ body {
     background-color: var(--ocean);
 }
 
-.input-title {
+.input-item {
     color: var(--lightslate, #8E8F99);
-    font-family: Roboto;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
+    display: block;
+    margin-bottom: 4px;
 }
 
-.modal-form-wrap {
+.modal-form-wrap{
     position: relative;
 }
 
-
+.input-field-comment{
+    margin-bottom: 16px;
+}
 
 
 .modal-icon-form-two {
@@ -923,31 +928,41 @@ body {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-placeholder {
-    width: 360px;
+    width: 100%;
     min-height: 120px;
-    padding-top: 8px;
-    padding-left: 16px;
-    outline: transparent;
-}
-
-.modal-placeholder::placeholder {
-
-    font-family: Roboto;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.17; 
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4)
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.modal-placeholder:focus-within{
+    border-color: #4D5AE5; 
+}
+
+
+
 
 .modal-check-text {
     margin-top: 8px;
     margin-bottom: 24px;
     color: var(--lightslate, #8E8F99);
-font-size: 12px;
-line-height: 1.17; 
-letter-spacing: 0.04em;
+
+
+
 display: flex;
 align-items: center;
 }
