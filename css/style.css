@@ -566,10 +566,7 @@ input {
 
 .footer-container-third {
     margin-left: 80px;
-
 }
-
-
 
 .footer-input {
     min-width: 264px;
@@ -586,7 +583,6 @@ input {
     background-color: transparent;
     color: var(--white);
     outline: transparent;
-
 }
 
 .footer-input::placeholder {
@@ -622,13 +618,11 @@ input {
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .footer-inpute-icon {
     fill: var(--white);
     margin-left: 16px;
-
 }
 
 .footer-btn:hover,
@@ -689,13 +683,8 @@ body {
     column-gap: 24px;
 }
 
-
-
-
-
 .portfolio-second-item {
     width: calc((100% - 48px) / 3);
-
 }
 
 .address {
@@ -801,8 +790,6 @@ body {
     fill: var(--white)
 }
 
-
-
 .modal-btn-close {
     position: absolute;
     top: 24px;
@@ -835,7 +822,6 @@ body {
 .modal-form {
     display: flex;
     flex-direction: column;
-
 }
 
 .input-field {
@@ -976,9 +962,6 @@ body {
 
 .modal-checkbox {
     border-radius: 1px;
-    fill: transparent;
-   
-
 }
 
 .modal-check:checked + .modal-check-text span{
