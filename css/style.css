@@ -189,9 +189,9 @@ input {
 /*------------------------------------------------------------HERO----------------------------------------------------------*/
 .hero {
     background-color: var(--navyblue, #2E2F42);
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -203,13 +203,13 @@ input {
 .hero-title {
     color: var(--white, #FFF);
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -246,50 +246,50 @@ input {
 
 /* -------------------------------------------------------ADVANTAGES------------------------------------------------------- */
 .advantages {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .advantages-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .advantages-item {
-    width: calc((100% - 72px) / 4);
+    
 }
 
 .advantages-title {
     color: var(--navyblue, #2E2F42);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .advantages-text {
+    
     color: var(--slate, #434455);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .advantages-top {
-    width: 100%;
-    height: 112px;
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    display: none;
 }
 
 .advantages-icon {}
 
 /* ----------------------------------------------------------WORKS--------------------------------------------------------- */
 .works {
+    display: none;
     padding-bottom: 120px;
 }
 
@@ -312,12 +312,10 @@ input {
 /* ------------------------------------------------------------TEAM-------------------------------------------------------- */
 .team {
     background-color: var(--cloud, #F4F4FD);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 96px 0;
 }
 
 .team-item {
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -325,7 +323,9 @@ input {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-title {
@@ -406,7 +406,7 @@ input {
 /* -----------------------------------CUSTOMS----------------------------- */
 
 .customs {
-    padding: 120px 0;
+    padding: 96px 0;
 
 }
 
@@ -416,14 +416,15 @@ input {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
 
 .customs-list {
     display: flex;
-    gap: 24px;
+flex-wrap: wrap;
+    gap: 72px 16px;
 }
 
 .customs-link {
@@ -453,7 +454,7 @@ input {
 
 
 .customs-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 
 }
@@ -461,15 +462,8 @@ input {
 /* -------------------------------------------------------------FOOTER----------------------------------------------------- */
 .footer {
     background-color: var(--navyblue, #2E2F42);
-    padding: 100px 0;
-
-
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-
+    padding-top: 97.5px;
+    padding-bottom: 96px;
 }
 
 .footer-logo {
@@ -491,7 +485,9 @@ input {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-text {
@@ -501,12 +497,7 @@ input {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-}
-
-
-
-.footer-container-main {
-    margin-right: 120px;
+    margin: 0 auto;
 }
 
 /* ------------------------------FOOTERT CONTAINER TWO---------------------- */
@@ -515,6 +506,7 @@ input {
 .footer-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-icon {
@@ -545,11 +537,14 @@ input {
 
 .footer-title {
     margin-bottom: 16px;
+    margin-top: 72px;
     color: var(--white, #FFF);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
 }
 
 /* ---------------------------FORM-------------------- */
@@ -561,15 +556,16 @@ input {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 72px;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
 
-.footer-container-third {
-    margin-left: 80px;
-}
 
 .footer-input {
-    min-width: 264px;
+    margin-bottom: 16px;
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
@@ -589,14 +585,6 @@ input {
     color: var(--white);
 }
 
-.footer-form {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-label {}
-
-
 .footer-btn {
     min-width: 165px;
     height: 40px;
@@ -605,7 +593,6 @@ input {
     cursor: pointer;
     font-family: inherit;
     padding: 8px 24px;
-    text-align: center;
     color: var(--white, #FFF);
     text-align: center;
     font-size: 16px;
@@ -618,6 +605,7 @@ input {
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
 
 .footer-inpute-icon {
@@ -969,3 +957,4 @@ body {
     border: none;
     fill: var(--cloud);
 }
+
