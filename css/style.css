@@ -118,8 +118,8 @@ input {
 }
 
 .header-list {
-    display: flex;
     gap: 40px;
+    display: none;
 }
 
 .header-list-link {
@@ -156,17 +156,18 @@ input {
 }
 
 .adress {
-    font-style: normal
+    font-style: normal;
+    
+    
 }
 
 .address-list {
-    display: flex;
     gap: 40px;
-    padding: 24px 0;
     margin-left: 332px;
+    display: none;
 }
 
-.address-list-item {}
+
 
 .address-list-link {
     color: var(--slate, #434455);
@@ -184,7 +185,111 @@ input {
     color: var(--ocean, #404BBF);
 }
 
+/* ---------------------------MOBMENU---------------------- */
 
+.menu-open-btn{
+    border: none;
+    stroke: var(--navyblue);
+    margin-left: auto;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 24px 0;
+}
+
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: var(--white);
+    padding: 24px 24px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+.menu-close-btn {
+    margin-left: auto;
+    margin-bottom: 32px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+}
+
+.mob-menu-list {
+    margin-bottom: 30px;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.mob-menu-link {
+    color: var(--navyblue, #2E2F42);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus{
+    color: var(--ocean);
+}
+
+
+.menu-address-list {
+    margin-bottom: 48px;
+}
+.menu-address-item:not(:last-child) {
+    margin-bottom: 40px;
+
+}
+.menu-address-link {
+    color: var(--slate);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+
+.menu-address-link:hover,
+.menu-address-link:focus{
+    color: var(--iris);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+}
+.menu-social-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 328px;
+}
+.menu-social-item {
+    width: 40px;
+    height: 40px;
+
+}
+.menu-social-link {
+    background-color: var(--iris, #4D5AE5);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.menu-social-icon {
+    fill: var(--cloud);
+}
 
 /*------------------------------------------------------------HERO----------------------------------------------------------*/
 .hero {
@@ -195,8 +300,17 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 428px;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-mob-2x.jpg);
+    } 
 }
 
 
@@ -625,16 +739,15 @@ body {
 }
 
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 48px 0;
 }
 
 .portfolio-list {
     display: flex;
-    margin-bottom: 72px;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 16px;
 }
 
 .portfolio-btn {
@@ -650,7 +763,7 @@ body {
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
     display: flex;
-    padding: 12px 24px;
+    padding: 8px 16px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     ;
 }
@@ -668,11 +781,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    column-gap: 24px;
-}
-
-.portfolio-second-item {
-    width: calc((100% - 48px) / 3);
 }
 
 .address {

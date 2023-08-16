@@ -3,16 +3,82 @@
         max-width: 426px;
     }
 
-
 }
+
+@media (min-width: 320px) and (max-width: 427px) {
+
+    /* ---------------------MODAL----------------------- */
+    .modal{
+       width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 767px){
+
+    .portfolio-list {
+        width: 270px;
+    }
+ }
+
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px;
     }
 
+    /* -----------------------HEADER-------------------------- */
+
+    @media screen and (min-width: 768px) and (max-width: 1157px){
+
+        .menu-open-btn{
+            display: none;
+        }
+    
+        .header-link{
+            margin-right: 0;
+        }
+    
+        .header-list{
+            display: flex;
+            margin-left: 120px;
+        }
+    
+        .address-list{
+            margin-left: 121px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 12px;
+        } 
+    
+        .address-list-link{
+            font-size: 12px;
+            line-height:1.17;
+            letter-spacing: 0.04em;
+            padding: 0;
+        }
+    
+    }
+    
+    
+
     /* -------------------------------HERO---------------------------- */
 
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+        max-width: 768px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-2x.jpg);
+    } 
+}
+    
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -67,7 +133,6 @@
     }
 
     .footer-container {
-        /* padding-left: 108px; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -102,6 +167,25 @@
         display: flex;
         gap: 24px;
     }
+
+    /* ----------------------------PORTFOLIO----------------------- */
+
+    .portfolio{
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .portfolio-list{
+        justify-content: center;
+    }
+
+    .portfolio-img{
+        width: 356px;
+    }
+
+    .portfolio-second-list{
+        gap: 72px 24px;
+    }
 }
 
     @media screen and (min-width: 1158px) {
@@ -109,11 +193,37 @@
         max-width: 1158px;
     }
 
+        /* -----------------------HEADER-------------------------- */
+
+    .menu-open-btn{
+        display: none;
+    }
+
+    .header-list{
+        display: flex;
+    }
+    .address-list{
+        display: flex;
+        padding: 22px 0;
+    }
+
     /* -------------------------------HERO---------------------------- */
 
     .hero {
         padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 1440px;
     }
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    } 
+}
 
     .hero-title {
         font-size: 56px;
@@ -254,5 +364,28 @@
     .footer-form {
         display: flex;
         gap: 24px;
+    }
+
+    /* ---------------------PORTFOLIO------------------- */
+
+    .portfolio-btn{
+        padding: 16px 24px;
+    }
+
+    .portfolio{
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-list{
+        margin-bottom: 72px;
+    }
+
+    .portfolio-img{
+        width: 360px;
+    }
+
+    .portfolio-second-list{
+        gap: 48px 24px;
     }
 }

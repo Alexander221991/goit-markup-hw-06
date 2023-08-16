@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-link link" href="./index.html">Web<span class="header-logo">Studio</span></a>
@@ -40,8 +40,69 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-mobile-open-btn"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden" data-menu>
+            <div>
+                <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="menu-address-list list">
+                    <li class="menu-address-item">
+                        <a class="menu-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="menu-address-item">
+                        <a class="menu-address-link link" href="tel:+110001111111">+11 (000) 111-11-11 </a>
+                    </li>
+                </ul>
+                <ul class="menu-social-list list">
+                    <li class="menu-social-item">
+                        <a class="menu-social-link link" href="">
+                            <svg class="menu-social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a class="menu-social-link link" href="">
+                            <svg class="menu-social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a class="menu-social-link link" href="">
+                            <svg class="menu-social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a class="menu-social-link link" href="">
+                            <svg class="menu-social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="hero">
             <div class="container">
@@ -61,7 +122,8 @@
                         </div>
                         <h3 class="advantages-title">Strategy</h3>
                         <p class="advantages-text">Our goal is to identify the business
-                            <span>problem to walk away with the perfect and creative solution.</span></p>
+                            <span>problem to walk away with the perfect and creative solution.</span>
+                        </p>
                     </li>
                     <li class="advantages-item">
                         <div class="advantages-top">
@@ -93,8 +155,9 @@
                             </svg>
                         </div>
                         <h3 class="advantages-title">Technologies</h3>
-                        <p class="advantages-text">Design practice focused on digital <span>experiences. We bring forth a deep
-                            passion for problem-solving.</span></p>
+                        <p class="advantages-text">Design practice focused on digital <span>experiences. We bring forth
+                                a deep
+                                passion for problem-solving.</span></p>
                     </li>
                 </ul>
             </div>
@@ -103,10 +166,16 @@
             <div class="container">
                 <h2 class="works-title">What are we doing</h2>
                 <ul class="works-list list">
-                    <li class="works-img"><img src="./images/Rectangle71.jpg" width="360" height="300" alt="monitor">
+                    <li class="works-img"><img srcset="./images/img1.jpg 1x,
+                        ./images/img1-2x.jpg 2x" 
+                        src="./images/img1.jpg" width="360" height="300" alt="monitor">
                     </li>
-                    <li class="works-img"><img src="./images/img2.jpg" width="360" height="300" alt="phone"></li>
-                    <li class="works-img"><img src="./images/img3(1).jpg" width="360" height="300"
+                    <li class="works-img"><img srcset="./images/img2.jpg 1x,
+                        ./images/img2-2x.jpg 2x"
+                         src="./images/img2.jpg" width="360" height="300" alt="phone"></li>
+                    <li class="works-img"><img srcset="./images/img3.jpg 1x,
+                        ./images/img3-2x.jpg 2x"
+                         src="./images/img3.jpg" width="360" height="300"
                             alt="phones&computer"></li>
                 </ul>
             </div>
@@ -116,7 +185,10 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img class="team-img" src="./images/img-1.jpg" width="264" height="260" alt="worker1">
+                        <img srcset="./images/img-1.jpg 1x,
+                         ./images/img-1-2x.jpg 2x" class="team-img" 
+                         src="./images/img-1.jpg" width="264" height="260"
+                            alt="worker1">
                         <div class="team-container">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -153,7 +225,10 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/img-2.jpg" width="264" height="260" alt="worker2">
+                        <img 
+                        srcset="./images/img-2.jpg 1x,
+                        ./images/img-2-2x.jpg 2x"
+                        class="team-img" src="./images/img-2.jpg" width="264" height="260" alt="worker2">
                         <div class="team-container">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -190,7 +265,10 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/img-3.jpg" width="264" height="260" alt="worker3">
+                        <img 
+                        srcset="./images/img-3.jpg 1x,
+                        ./images/img-3-2x.jpg 2x"
+                        class="team-img" src="./images/img-3.jpg" width="264" height="260" alt="worker3">
                         <div class="team-container">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -227,7 +305,10 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/img-4.jpg" width="264" height="260" alt="worker4">
+                        <img 
+                        srcset="./images/img-4.jpg 1x,
+                        ./images/img-4-2x.jpg 2x"
+                        class="team-img" src="./images/img-4.jpg" width="264" height="260" alt="worker4">
                         <div class="team-container">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -360,7 +441,7 @@
             <div class="footer-container-third">
                 <p class="footer-form-text">Subscribe</p>
                 <form class="footer-form">
-                    <label aria-label="footrt email input" class="footer-label">
+                    <label aria-label="footer email input" class="footer-label">
                         <input type="email" name="footer-email" class="footer-input" placeholder="E-mail">
                     </label>
                     <button type="submit" class="footer-btn">Subscribe
@@ -414,7 +495,8 @@
                         class="modal-placeholder"></textarea>
                 </div>
                 <div class="check-field">
-                    <input id="user-privacy" type="checkbox" name="user-privacy" class="modal-check visually-hidden" value="true">
+                    <input id="user-privacy" type="checkbox" name="user-privacy" class="modal-check visually-hidden"
+                        value="true">
                     <label class="modal-check-text" for="user-privacy">
                         <span class="modal-check-wrap">
                             <svg class="modal-checkbox" width="10" height="8">
@@ -429,6 +511,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>
